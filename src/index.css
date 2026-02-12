@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-primary font-sans text-secondary min-h-screen;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bangers tracking-wide;
+  }
+}
+
+@layer components {
+  .btn-neo {
+    @apply bg-accent text-white font-bangers text-xl px-6 py-2 border-2 border-black shadow-neo transition-all active:translate-x-[2px] active:translate-y-[2px] active:shadow-none hover:bg-orange-600;
+  }
+  .input-neo {
+    @apply w-full p-3 border-2 border-black shadow-neo focus:outline-none focus:ring-0 bg-white font-sans text-lg placeholder-gray-500;
+  }
+  .card-neo {
+    @apply bg-white border-2 border-black shadow-neo p-4;
+  }
+}
